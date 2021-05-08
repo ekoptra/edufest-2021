@@ -1,0 +1,372 @@
+.mt {
+    margin-top: 1rem;
+}
+
+.mr {
+    margin-right: 0.3rem;
+}
+
+/* Info */
+main .info {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "tugas absensi";
+}
+
+main .info .card-tugas {
+    grid-area: tugas;
+    margin-right: 2rem;
+}
+
+main .info .card-absensi {
+    grid-area: absensi;
+}
+
+main .info .card-tugas div,
+main .info .card-absensi .judul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+
+main .info .card-tugas div:last-child {
+    margin-bottom: 0;
+}
+
+main .info .card-tugas div> :first-child {
+    width: 70px;
+    text-align: center;
+}
+
+main .info .card .judul {
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+}
+
+main .info .card-tugas a {
+    display: inline-block;
+}
+
+main .info .card-tugas a:hover {
+    background-color: var(--gray-1);
+}
+
+/* Card Absensi */
+main .info .card-absensi .judul> :first-child {
+    margin-right: 20px;
+}
+
+main .info .card-absensi .absen .matkul {
+    font-size: 0.85em;
+    margin-bottom: 0.5rem;
+}
+
+main .info .card-absensi .absen .container-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #B1B1B1;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 0.3rem;
+}
+
+main .info .card-absensi .absen .container-bar .bar {
+    width: 85%;
+    background-color: var(--teal-green);
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -1px;
+}
+
+main .info .card-absensi .absen .persentase {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tulisan */
+
+main .tulisan {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    grid-template-areas: "pengumuman artikel";
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+main h2 {
+    color: var(--teal-green);
+}
+
+main .tulisan .pengumuman {
+    grid-area: pengumuman;
+}
+
+main .tulisan .artikel {
+    grid-area: artikel;
+}
+
+
+main .tulisan .slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+main .tulisan .mySlides {
+    display: none;
+    padding: 5px 30px;
+}
+
+/* Next & previous buttons */
+main .tulisan .prev,
+main .tulisan .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+main .tulisan .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+main .tulisan .prev:hover,
+main .tulisan .next:hover {
+    background-color: var(--gray-1);
+}
+
+
+/* The dots/bullets/indicators */
+main .tulisan .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+main .tulisan .active,
+main .tulisan .dot:hover {
+    background-color: var(--blue);
+}
+
+/* Fading animation */
+main .tulisan .fade {
+    animation-name: fade;
+    animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+main .tulisan .pengumuman .pengumuman-header {
+    text-align: center;
+}
+
+main .tulisan .pengumuman .pengumuman-judul {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+main .tulisan .pengumuman .pengumuman-judul a:hover {
+    color: var(--orange);
+}
+
+main .tulisan .pengumuman .pengumuman-info {
+    font-size: 0.9em;
+}
+
+main .tulisan .pengumuman .pengumuman-body {
+    font-size: 0.95em;
+    margin-top: 1rem;
+}
+
+/* Artikel */
+main .tulisan .card-artikel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+main .tulisan .card-artikel .artikel-judul {
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+
+main .tulisan .card-artikel .artikel-judul a:hover {
+    color: var(--orange);
+}
+
+main .tulisan .card-artikel .artikel-info {
+    text-align: center;
+    font-size: 0.95em;
+}
+
+main .tulisan .btn-lainnya {
+    float: right;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--blue);
+    font-size: 0.85em;
+}
+
+main .tulisan .btn-lainnya:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+main .calender-container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+main .calender-container .card-calender {
+    margin-top: 1rem;
+}
+
+main .calender-container .judul {
+    color: var(--orange);
+    margin-bottom: 1rem;
+    -webkit-text-stroke: 0.5px var(--orange);
+}
+
+main .calender-container .judul> :first-child {
+    margin-right: 0.5rem;
+}
+
+main .calender-container .calender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 90px);
+}
+
+main .calender-container .hari {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 0.5rem;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+main .calender-container .calender>* {
+    border: 1px solid var(--gray-1);
+    display: flex;
+    align-items: flex-end;
+    font-size: 0.8em;
+    padding-left: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+main .calender-container .calender> :first-child {
+    border-top-left-radius: 5px;
+}
+
+main .calender-container .calender> :nth-child(7) {
+    border-top-right-radius: 5px;
+}
+
+main .calender-container .calender> :nth-child(29) {
+    border-bottom-left-radius: 5px;
+}
+
+main .calender-container .calender> :last-child {
+    border-bottom-right-radius: 5px;
+}
+
+main .calender-container .calender .today {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+}
+
+@media (max-width: 1200px) {
+    main .tulisan {
+        grid-template-columns: 6fr 6fr;
+    }
+
+    main .tulisan .card-artikel {
+        grid-template-columns: 1fr;
+    }
+
+    main .calender-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    main .info {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "tugas"
+            "absensi";
+    }
+
+    main .info .card-tugas {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    main .tulisan {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "pengumuman"
+            "artikel";
+    }
+
+    main .calender-container .calender {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 70px);
+    }
+
+    main .calender-container .hari,
+    main .calender-container .calender>* {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 768px) {
+    main .tulisan .card-artikel {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 567px) {
+    main .tulisan .card-artikel {
+        grid-template-columns: 1fr;
+    }
+}
