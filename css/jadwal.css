@@ -1,0 +1,164 @@
+main .judul {
+    margin-top: 1.5rem;
+}
+
+main .judul p {
+    color: var(--blue);
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+
+main .jadwal {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1;
+    gap: 2rem;
+}
+
+main .jadwal .minggu-ini {
+    padding: 1rem 3rem;
+}
+
+/* Minggu ini */
+main .jadwal .minggu-ini .kotak-jadwal {
+    display: grid;
+    background-color: #F7F7F7;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 110px);
+    padding: 0.5rem;
+    gap: 1rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+main .jadwal .minggu-ini .kotak-jadwal .jam-sesi {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(3, 110px);
+    padding: 0.5rem;
+    gap: 1rem;
+    left: -65px;
+}
+
+main .jadwal .minggu-ini .kotak-jadwal .jam-sesi div {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-90deg);
+    font-size: 0.7em;
+    text-align: center;
+    justify-content: center;
+}
+
+main .jadwal .minggu-ini .kotak-jadwal .sesi {
+    background-color: var(--teal-green);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    flex-direction: column;
+}
+
+main .jadwal .minggu-ini .kotak-jadwal .sesi .ruangan {
+    margin-top: 0.6rem;
+}
+
+main .jadwal .minggu-ini .kotak-jadwal .sesi .matkul {
+    font-weight: bold;
+}
+
+main .jadwal .minggu-ini .kotak-jadwal .sesi a {
+    padding: 0;
+    color: white;
+    text-decoration: underline;
+}
+
+main .jadwal .minggu-ini .minggu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 1em;
+    margin-bottom: 1rem;
+    gap: 2rem;
+    padding: 0 0.5rem;
+    position: relative;
+}
+
+main .jadwal .minggu-ini .minggu .tanggal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+    z-index: 100;
+}
+
+main .jadwal .minggu-ini .minggu .tanggal.today,
+main .jadwal .minggu-ini .minggu .tanggal:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+main .jadwal .minggu-ini .minggu .tanggal span:first-child {
+    font-size: 1.5rem;
+}
+
+main .jadwal .minggu-ini .minggu .arrow {
+    position: absolute;
+    display: flex;
+    top: 20%;
+    left: -20px;
+    right: -20px;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+main .jadwal .minggu-ini .minggu .arrow> :hover {
+    color: var(--orange) !important;
+}
+
+@media (max-width: 1200px) {
+    main .jadwal .minggu-ini .kotak-jadwal .sesi {
+        font-size: 0.85em;
+    }
+
+    main .jadwal .minggu-ini .minggu {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 992px) {
+    main .jadwal .minggu-ini .kotak-jadwal .sesi {
+        font-size: 0.65em;
+    }
+
+    main .jadwal .minggu-ini .kotak-jadwal {
+        grid-template-rows: repeat(3, 90px);
+    }
+
+    main .jadwal .minggu-ini .kotak-jadwal .jam-sesi {
+        grid-template-rows: repeat(3, 90px);
+        left: -55px;
+    }
+
+    main .jadwal .minggu-ini .kotak-jadwal .jam-sesi div {
+        transform: rotate(-90deg);
+        font-size: 0.6em;
+    }
+
+    main .jadwal .minggu-ini {
+        padding: 1rem 2rem;
+    }
+
+    main .jadwal .minggu-ini .minggu {
+        font-size: 0.7em;
+    }
+
+    main .jadwal .minggu-ini .minggu .arrow {
+        font-size: 1.2rem;
+    }
+}

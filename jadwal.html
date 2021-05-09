@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>SIPADU : Beranda</title>
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/about_us.css">
+    <link rel="stylesheet" href="css/jadwal.css">
     <link rel="shortcut icon" href="https://stis.ac.id/sipadu/mahasiswa/images/icon_logo.ico" type="image/x-icon">
 </head>
 
@@ -36,7 +36,7 @@
                 <i class="fas fa-times icon close" style="display: none;"></i>
                 <div class="menu-small-container hide">
                     <div class="small-profil">
-                        <img src="img/widya.jpg" alt="Logo" width="40">
+                        <img src="img/widya.jpg" alt="Logo" width="35">
                         <span>Wahidya Nurkarim</span>
                         <div class="dropdown">
                             <i class="fas fa-chevron-down pointer dropdown-button"></i>
@@ -82,12 +82,12 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <div class="accordion-header">
+                                <div class="accordion-header active">
                                     <i class="fas fa-book-open"></i>
                                     <span>Perkuliahan</span>
                                 </div>
-                                <div class="accordion-body">
-                                    <a href="jadwal.html">Jadwal Kuliah</a>
+                                <div class="accordion-body active">
+                                    <a href="jadwal.html" class="active">Jadwal Kuliah</a>
                                     <a href="#">Nilai</a>
                                     <a href="#">Peminatan</a>
                                     <a href="#">Angket Evaluasi Dosen</a>
@@ -100,7 +100,7 @@
                                     <span>Bahan Kuliah</span>
                                 </div>
                                 <div class="accordion-body">
-                                    <a href="#">Analisis Peubah Ganda</a>
+                                    <a href="bahan_kuliah.html">Analisis Peubah Ganda</a>
                                     <a href="#">Artificial Intelligent</a>
                                     <a href="#">Manajemen Perkantoran</a>
                                     <a href="#">Metode Numerik</a>
@@ -158,41 +158,103 @@
                 </div>
             </div>
         </header>
-
         <main>
-            <div class="card">
-                <div class="nama-tim">
-                    <p>Tim Paparazzi - Angkatan 60</p>
-                </div>
-                <div class="tim">
-                    <div class="anggota">
-                        <img src="/img/widya.jpg" alt="Widya" width="55" height="55">
-                        <div class="detail">
-                            <div class="nama">Wahidya Nurkarim</div>
-                            <small class="nim">221810650 - 3SD1</small>
-                            <small class="kelas">Pekanbaru, Riau</small>
-                            <a href="https://github.com/wahidyaa" class="github" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <span>wahidyaa</span>
-                            </a>
+            <div class="breadcrumb">
+                Perkuliahan / <a href="#">Jadwal Kuliah</a>
+            </div>
+
+            <div class="judul">
+                <p class="matkul stroke-font">Jadwal Kuliah</p>
+                <small class="tanggak">26 April 2021 - 1 Mei 2021</small>
+            </div>
+
+            <div class="jadwal">
+                <div class="minggu-ini card">
+                    <div class="minggu">
+                        <a class="tanggal" href="#">
+                            <span>26</span>
+                            <span>Senin</span>
+                        </a>
+                        <a class="tanggal" href="#">
+                            <span>27</span>
+                            <span>Selasa</span>
+                        </a>
+                        <a class="tanggal today">
+                            <span>28</span>
+                            <span>Rabu</span>
+                        </a>
+                        <a class="tanggal" href="#">
+                            <span>29</span>
+                            <span>Kamis</span>
+                        </a>
+                        <a class="tanggal" href="#">
+                            <span>30</span>
+                            <span>Jumat</span>
+                        </a>
+                        <div class="arrow">
+                            <a class="prev">&#10094;</a>
+                            <a class="next">&#10095;</a>
                         </div>
                     </div>
-                    <div class="anggota">
-                        <img src="/img/eko.jpg" alt="Eko" width="55" height="55">
-                        <div class="detail">
-                            <div class="nama">Eko Putra Wahyuddin</div>
-                            <small class="nim">221810259 - 3SD1</small>
-                            <small class="kelas">Poso, Sulawesi Tengah</small>
-                            <a href="https://github.com/ekoptra" class="github" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <span>ekoptra</span>
-                            </a>
+                    <div class="kotak-jadwal">
+                        <div class="jam-sesi">
+                            <div>
+                                <span>Sesi 1</span>
+                                <span>07:30 - 10:00</span>
+                            </div>
+                            <div>
+                                <span>Sesi 2</span>
+                                <span>10:15 - 12:45</span>
+                            </div>
+                            <div>
+                                <span>Sesi 3</span>
+                                <span>13:30 - 16:00</span>
+                            </div>
                         </div>
+                        <div class="sesi">
+                            <span class="matkul">APG</span>
+                            <span class="ruangan">R. 253</span>
+                            <a href="#">Zoom</a>
+                        </div>
+                        <div class="sesi">
+                            <span class="matkul">Simdat</span>
+                            <span class="ruangan">R. 255</span>
+                            <a href="#">Zoom</a>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div class="sesi">
+                            <span class="matkul">Visdat</span>
+                            <span class="ruangan">R. 267</span>
+                            <a href="#">Zoom</a>
+                        </div>
+                        <div></div>
+                        <div class="sesi">
+                            <span class="matkul">AI</span>
+                            <span class="ruangan">R. 321</span>
+                            <a href="#">Zoom</a>
+                        </div>
+                        <div class="sesi">
+                            <span class="matkul">Metnum</span>
+                            <span class="ruangan">R. 333</span>
+                            <a href="#">Zoom</a>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="sesi">
+                            <span class="matkul">Admintor</span>
+                            <span class="ruangan">R. 334</span>
+                            <a href="#">Zoom</a>
+                        </div>
+                        <div></div>
                     </div>
                 </div>
             </div>
-        </main>
 
+        </main>
         <nav>
             <div class="container-nav">
                 <div class="card card-sesi">
@@ -228,12 +290,12 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <div class="accordion-header">
+                            <div class="accordion-header active">
                                 <i class="fas fa-book-open"></i>
                                 <span>Perkuliahan</span>
                             </div>
-                            <div class="accordion-body">
-                                <a href="jadwal.html">Jadwal Kuliah</a>
+                            <div class="accordion-body active">
+                                <a href="jadwal.html" class="active">Jadwal Kuliah</a>
                                 <a href="#">Nilai</a>
                                 <a href="#">Peminatan</a>
                                 <a href="#">Angket Evaluasi Dosen</a>
@@ -246,7 +308,7 @@
                                 <span>Bahan Kuliah</span>
                             </div>
                             <div class="accordion-body">
-                                <a href="#">Analisis Peubah Ganda</a>
+                                <a href="bahan_kuliah.html">Analisis Peubah Ganda</a>
                                 <a href="#">Artificial Intelligent</a>
                                 <a href="#">Manajemen Perkantoran</a>
                                 <a href="#">Metode Numerik</a>
