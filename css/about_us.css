@@ -58,4 +58,8 @@ main .tim .anggota .github i {
     main .card {
         width: 100%;
     }
+
+    main .card {
+        padding: 2rem 1rem;
+    }
 }
