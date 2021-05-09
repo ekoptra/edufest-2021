@@ -1,0 +1,295 @@
+main .judul .matkul {
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin-bottom: 0.4rem;
+}
+
+main .judul .pengajar {
+    font-size: 0.9rem;
+}
+
+main .judul .pengajar> :first-child {
+    margin-right: 0.5rem;
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 50%;
+    border: 1px solid var(--font-color);
+}
+
+main .materi-container {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+main .materi-container>* {
+    height: 400px;
+    overflow: auto;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+main .list-pertemuan .pertemuan {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    padding: 0;
+}
+
+main .list-pertemuan .pertemuan.active,
+main .list-pertemuan .pertemuan:hover {
+    background-color: var(--teal-green);
+    color: white;
+}
+
+main .list-pertemuan .pertemuan .ke {
+    background-color: var(--teal-green);
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main .isi.card-isi {
+    border: 2px solid var(--teal-green);
+    overflow: auto !important;
+}
+
+main .isi.card-isi a {
+    padding: 0;
+}
+
+main .isi.card-isi h5 {
+    color: var(--orange);
+    margin-bottom: 0.5rem;
+}
+
+main .isi.card-isi>* {
+    margin-bottom: 1rem;
+}
+
+/* Materi */
+
+main .isi.card-isi .isi-materi {
+    display: flex;
+    background-color: var(--gray-1);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    align-items: center;
+}
+
+main .isi.card-isi .isi-materi .extension {
+    width: 40px;
+    height: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+main .isi.card-isi .isi-materi .isi-judul-materi {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-size: 0.9em;
+}
+
+/* Video Pembelajaran */
+main .isi.card-isi .video>div,
+.collapse .collapse-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: var(--gray-1);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: .3s ease;
+}
+
+.collapse {
+    margin-bottom: 0.5rem;
+}
+
+.collapse .collapse-header.active,
+.collapse .collapse-header:hover {
+    background-color: var(--teal-green);
+    color: white;
+}
+
+.collapse .collapse-header.active .text-red,
+.collapse .collapse-header:hover .text-red {
+    color: white;
+}
+
+/* Collapse */
+.collapse .collapse-body {
+    background-color: var(--gray-1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.collapse .collapse-body div {
+    padding: 0.5rem;
+}
+
+.collapse .collapse-body .keterangan {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1px;
+}
+
+.collapse .collapse-body .keterangan:last-child {
+    margin-bottom: 0;
+}
+
+.collapse .collapse-body .keterangan i {
+    margin-right: 1rem;
+}
+
+
+.collapse .collapse-body .upload {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.collapse .collapse-body .btn-upload {
+    border: 1px solid var(--teal-green);
+    padding: 0.2rem 1rem;
+    transition: .3s ease;
+}
+
+.collapse .collapse-body .btn-upload:hover {
+    background-color: var(--teal-green);
+    color: white;
+}
+
+/* Komentar */
+
+main .komentar-catatan {
+    margin: 1.5rem 0;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 2rem;
+}
+
+main .komentar-catatan h2 {
+    color: var(--teal-green);
+    margin-bottom: 1rem;
+}
+
+main .komentar-container .komentar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+main .komentar-container .komentar img {
+    border-radius: 50%;
+    border: 1px solid var(--gray-1);
+    margin-right: 0.5rem;
+}
+
+main .komentar-container .komentar .isi-komentar {
+    display: flex;
+    flex-direction: column;
+}
+
+main .komentar-container .komentar .isi-komentar span {
+    background-color: var(--gray-1);
+    margin-top: 0.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+main .komentar-container .buat-komentar {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+main .komentar-container .buat-komentar>i {
+    width: 35px;
+    text-align: center;
+}
+
+main .komentar-container .buat-komentar>input {
+    width: calc(100% - 90px);
+    background-color: var(--gray-1);
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid var(--gray-2);
+    border-radius: 10px;
+}
+
+main .komentar-container .buat-komentar>input:focus {
+    border: 1px solid var(--gray-2);
+    outline: none;
+    box-shadow: 0 0 5px var(--gray-1);
+}
+
+/* Catatan */
+main .catatan-container .card-catatan .catatan-judul {
+    border-bottom: 2px solid var(--gray-1);
+    padding-bottom: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+main .catatan-container .card-catatan textarea {
+    width: 100%;
+    border: 1px solid var(--gray-1);
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 150px;
+    color: var(--font-color);
+    border-radius: 10px;
+}
+
+main .catatan-container .card-catatan textarea:focus {
+    border: 1px solid var(--gray-1);
+    outline: none;
+}
+
+main .catatan-container .card-catatan .keterangan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+}
+
+main .catatan-container .card-catatan .keterangan small {
+    font-size: 0.7em;
+}
+
+@media (max-width: 1200px) {
+    main .komentar-catatan {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    main .materi-container {
+        grid-template-columns: 1fr;
+    }
+
+    main .materi-container .list-pertemuan {
+        height: 150px;
+    }
+}

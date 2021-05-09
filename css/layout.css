@@ -3,6 +3,7 @@
     --height-footer: 55px;
     --orange: #F0854C;
     --blue: #0A689A;
+    --red: #E8523F;
     --teal-green: #04A596;
     --gray-1: #F1F3F6;
     --gray-2: #D3E1E7;
@@ -37,6 +38,14 @@
 
 .text-orange {
     color: var(--orange);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-teal-green {
+    color: var(--teal-green);
 }
 
 a {
@@ -84,7 +93,7 @@ nav a:hover,
 }
 
 .custom-scroll::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px #F1F3F6;
+    box-shadow: inset 0 0 10px #dddfe0;
     border-radius: 10px;
     opacity: 0.5;
 }
@@ -182,6 +191,11 @@ header>.profil {
 
 header>.profil>* {
     margin-right: 0.7rem;
+}
+
+header>.profil img {
+    border-radius: 50%;
+    border: 1px solid var(--gray-1);
 }
 
 header .menu-small {
@@ -348,6 +362,11 @@ footer {
 
     header .menu-small {
         display: block;
+    }
+
+    header .menu-small .small-profil img {
+        border-radius: 50%;
+        border: 1px solid var(--gray-1);
     }
 
     header .menu-small>.icon {
